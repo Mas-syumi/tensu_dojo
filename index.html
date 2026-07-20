@@ -117,6 +117,16 @@ h2.ph{font-family:var(--serif);font-size:26px;font-weight:700;margin:0 0 4px;let
 .chip.cool{background:#E7EEE9;border-color:#CADACE;color:var(--matsu-d)}
 
 .hand{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;margin:6px 0 20px}
+@media(max-width:600px){
+  .hand{gap:9px}
+  .tile{width:32px;height:44px}
+  .tile .n{font-size:18px}
+  .tile .st{font-size:8px}
+}
+@media(max-width:380px){
+  .tile{width:28px;height:39px}
+  .tile .n{font-size:16px}
+}
 .tile{width:38px;height:52px;border-radius:6px;background:linear-gradient(#FFFEFA,#F5EFDF);border:1px solid #C8BDA0;box-shadow:inset 0 -3px 0 #E8DFC8,0 1px 1px rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;flex:0 0 auto}
 .tile .n{font-family:var(--serif);font-weight:700;font-size:22px;line-height:1}
 .tile .st{font-size:9px;margin-top:1px;letter-spacing:.02em;opacity:.85}
@@ -127,7 +137,7 @@ h2.ph{font-family:var(--serif);font-size:26px;font-weight:700;margin:0 0 4px;let
 .tile.red .n{color:#C63A20} .tile.red::after{content:"";position:absolute;inset:auto 0 3px;height:2px}
 .tile.win{border-color:var(--shu);box-shadow:0 0 0 2px rgba(190,64,42,.35),0 2px 4px rgba(0,0,0,.12);transform:translateY(-6px)}
 .tile.called{transform:rotate(-90deg);margin:0 8px;transform-origin:center bottom;position:relative;top:-7px}
-.meld{display:flex;gap:3px;align-items:flex-end}
+.meld{display:flex;gap:3px;align-items:flex-end;flex-wrap:wrap;row-gap:6px}
 .melabel{font-size:10px;color:var(--mut);text-align:center;margin-top:3px}
 
 .ask{font-size:15px;font-weight:500;margin:0 0 12px}
